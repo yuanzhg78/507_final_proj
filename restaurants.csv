@@ -1,0 +1,119 @@
+restaurant_id,restaurant_name,categories,price_level,trip_ratings,ratings,review_counts,state,city,street_address,latitude,longitude
+Xm2A4Xyd-dw4x86qZCV3hw,Chartreuse,"['American (New)', 'Tapas/Small Plates', 'Cocktail Bars']",$$$,4.5,4.5,661,MI,Detroit,15 E Kirby St,42.36054,-83.06595
+66OeH9RD62D3bXbqefjYvw,Giovanni's Ristorante,['Italian'],$$$,4.5,4.5,269,MI,Detroit,330 S Oakwood,42.2903220548957,-83.1459120674591
+4p1bXdMdETmyU5qhzFxNxw,Selden Standard,"['American (New)', 'Breakfast & Brunch', 'Sandwiches']",$$,4.5,4.5,1111,MI,Detroit,3921 2nd Ave,42.34779,-83.06499
+HYrqw4xlLCNDptBHGrTIbQ,Dime Store,"['Breakfast & Brunch', 'Bars', 'Diners']",$$,4.5,4.5,1483,MI,Detroit,719 Griswold St,42.3308060633157,-83.0479924085636
+8ctLeteWujq_EfH2lRSTAw,Supino Pizzeria,"['Pizza', 'Italian']",$$,4.5,4.5,856,MI,Detroit,2457 Russell St,42.345476174914,-83.040064828648
+TUR6H5mBXMDGt3qjv5sekg,Buddy's Pizza,"['Pizza', 'Salad', 'Italian']",$$,4.5,4.5,238,MI,Detroit,17125 Conant St,42.41897,-83.06405
+7ArIKwojlm_Yca29HnGDfQ,Wright & Company,"['Gastropubs', 'American (New)', 'Tapas/Small Plates']",$$$,4.5,4.5,879,MI,Detroit,1500 Woodward Ave,42.33523,-83.04902
+UdO_uBm3sIM5DwaE8XIpbg,Grey Ghost Detroit,"['American (Traditional)', 'Beer Bar', 'Cocktail Bars']",$$$,4.5,4.0,683,MI,Detroit,47 Watson St,42.3451704384376,-83.0555171146989
+kLwuEacC69wf8aVAa0BojA,Taqueria Mi Pueblo,['Mexican'],$,4.5,4.5,502,MI,Detroit,7278 Dix St,42.3170909635414,-83.1241897817536
+YqmsCvd3w0RxEiAcYGj64w,Mudgie's Deli & Wine Shop,"['Delis', 'Wine Bars', 'American (Traditional)']",$$,4.5,4.0,874,MI,Detroit,1413 Brooklyn St,42.3290835,-83.0620948
+x7bzkyPv0pf8mmp4BaexZQ,Lafayette Coney Island,"['Hot Dogs', 'American (New)']",$,4.5,4.0,920,MI,Detroit,118 W Lafayette Blvd,42.3314466332113,-83.0488398850383
+rMDncCUM1-1cuqA5gv1puw,PizzaPapalis of Greektown,"['Pizza', 'Italian']",$$,4.5,4.0,493,MI,Detroit,553 Monroe St,42.3353866848686,-83.0416461032287
+NcM6ASYzFMDN366FsuBTVw,Green Dot Stables,"['Bars', 'American (New)']",$,4.5,4.0,1865,MI,Detroit,2200 W Lafayette Blvd,42.3218706734797,-83.071439609787
+2sIc82MtKcAjx7oW3b6sqA,Andiamo Detroit Riverfront,['Italian'],$$$,4.5,4.0,460,MI,Detroit,400 Renaissance Ctr,42.328235,-83.039659
+unpNAU7aIF11_VQvZXUOWg,The Apparatus Room,"['American (New)', 'Cocktail Bars']",$$$,4.5,4.0,565,MI,Detroit,250 W Larned St,42.3281585909956,-83.04851272487
+ZrThFosYNhJmoMx0FI8P3A,Joe Muer Seafood,"['Seafood', 'Sushi Bars', 'American (Traditional)']",$$$,4.5,4.0,597,MI,Detroit,400 Renaissance Ctr,42.3279507129647,-83.040138261377
+p_YqaizB_k9q6evn0xeMTw,Roast,['Steakhouses'],$$$,4.5,4.0,966,MI,Detroit,1128 Washington Blvd,42.3321923,-83.050707
+WFtnK-JJnoVHtbMAQW7tNg,The Hudson Cafe,"['Breakfast & Brunch', 'Cafes']",$$,4.5,4.0,985,MI,Detroit,1241 Woodward Ave,42.333363,-83.0485
+jDHPcMstUfhnbp-4dVm7YQ,SavannahBlue,"['American (New)', 'Soul Food', 'Cocktail Bars']",$$,4.5,4.0,465,MI,Detroit,1431 Times Square,42.3341913,-83.05233
+ngu3My-XGzNNL7Bxul5ulQ,Ottava Via,"['Pizza', 'Italian', 'Sandwiches']",$$,4.5,4.0,623,MI,Detroit,1400 Michigan Ave,42.331716,-83.065696
+iqHPET9Z17ugMjorPyDfIw,London Chop House,"['Steakhouses', 'Cocktail Bars', 'Cigar Bars']",$$$$,4.5,4.0,274,MI,Detroit,155 W Congress St,42.329211,-83.047384
+8I1Ja8TbfEN0UOWocP0usA,Cliff Bell's,"['Bars', 'Jazz & Blues', 'American (New)']",$$,4.5,3.5,556,MI,Detroit,2030 Park Ave,42.3368149,-83.0527165
+W8sLqrbS-ZxIuEuQbjAIrw,Slows Bar BQ,"['Barbeque', 'Beer Bar', 'American (Traditional)']",$$,4.5,4.0,2043,MI,Detroit,2138 Michigan Ave,42.3315986974041,-83.0759533597131
+RvZGz_qp8JWfG27vI-TnBQ,Mercury Burger Bar,"['Burgers', 'Beer Bar']",$$,4.5,4.0,717,MI,Detroit,2163 Michigan Ave,42.3311573702812,-83.0761372076567
+oeomzExb17rIkur7hNK-HQ,Vicente's Cuban Cuisine,"['Cuban', 'Dance Clubs', 'Seafood']",$$,4.5,4.0,779,MI,Detroit,1250 Library St,42.33447,-83.047077
+HBX4hBNcOYwAJ2kAWebtbA,Texas De Brazil,"['Steakhouses', 'Brazilian', 'Venues & Event Spaces']",$$$,4.5,4.0,149,OH,Woodmere,28125 Chagrin Blvd,41.4624849,-81.4800712
+65pRcC4awElAnzH4io9Chw,Batch Brewing Company,"['American (New)', 'Brewpubs']",$$,4.5,4.5,411,MI,Detroit,1400 Porter St,42.3283429981483,-83.0632939479199
+XSdPHFMD4npoSKAih2mcqg,Republic,['American (New)'],$$$,4.5,4.0,486,MI,Detroit,1942 Grand River Ave,42.3350182,-83.0549774
+jsCoUs3A4eAGmQCv-cQMgg,HopCat,"['Beer Bar', 'Burgers']",$$,4.0,4.0,475,MI,East Lansing,300 Grove St,42.7359679597251,-84.4818967913957
+2ryA0axzi8P5zbQAePZ0ow,The Whitney,"['American (New)', 'Cocktail Bars', 'Venues & Event Spaces']",$$$,4.0,3.5,500,MI,Detroit,4421 Woodward Ave,42.352752,-83.062149
+4QDFNHNhgF6gRR9siCKpxw,Parks & Rec Diner,"['Diners', 'Breakfast & Brunch']",$$,4.5,4.0,470,MI,Detroit,1942 Grand River Ave,42.33502,-83.05498
+vSL3-uVBMEN72cldQjI_JA,Iridescence,"['American (New)', 'Bars', 'Seafood']",$$$,4.5,4.0,275,MI,Detroit,2901 Grand River Ave,42.3385309526863,-83.0681450529175
+q2BSrIE_FQjQGtw6_N5C5Q,La Feria,"['Tapas Bars', 'Spanish']",$$,4.5,4.0,361,MI,Detroit,4130 Cass Ave,42.350197,-83.062759
+DGKGnFBhBbT2ZG6Tw4MeSQ,Red Smoke Barbecue,['Barbeque'],$$,4.0,3.5,496,MI,Detroit,573 Monroe St,42.3355015,-83.0411951
+fvq6GctVWHECsH3Qr7Cy0w,Grand Trunk Pub,"['Pubs', 'American (New)', 'Irish Pub']",$$,4.0,3.5,566,MI,Detroit,612 Woodward Ave,42.33064,-83.04554
+le3t2klC9l-Xc3Uym0i6GA,Cornerstone Barrel House,"['American (New)', 'Whiskey Bars']",$$,4.5,4.5,254,MI,Detroit,1456 Woodward Ave,42.3350177714612,-83.0488294208078
+lZyf7m2XxI5b3YM0vOLCXw,Maru Sushi & Grill Detroit,"['Sushi Bars', 'Seafood', 'Bars']",$$,4.5,4.0,415,MI,Detroit,160 W Fort St,42.3305584,-83.0486197
+qoa4G6VPNewFZeZse0e79w,Lady Of The House,"['American (New)', 'Bars', 'Breakfast & Brunch']",$$$,4.5,4.0,323,MI,Detroit,1426 Bagley Ave,42.3298756,-83.0649689
+gL6l1EqphkyLqER5lgmReg,Standby,"['American (New)', 'Cocktail Bars']",$$,4.5,4.5,537,MI,Detroit,225 Gratiot Ave,42.3344844608147,-83.0461140631014
+m_jDZuBDEonJLtzB9L6X5g,Detroit Beer Company,"['Breweries', 'American (New)']",$$,4.0,3.5,426,MI,Detroit,1529 Broadway,42.335826,-83.048828
+qa70o0JbMVMQJf4fvWiZaw,Johnny Noodle King,"['Ramen', 'Chinese', 'Noodles']",$$,4.5,4.0,711,MI,Detroit,2601 W Fort,42.3188863,-83.0743996
+T6Zl8NssV2qy8Vn9c9ueDQ,Bobcat Bonnie's,"['Gastropubs', 'Breakfast & Brunch', 'Cocktail Bars']",$$,4.5,4.0,530,MI,Detroit,1800 Michigan Ave,42.3315449,-83.0707433
+FyEORWCcFAy3VCeixbU2VQ,Parc,"['American (New)', 'Bars', 'Breakfast & Brunch']",$$$,4.0,4.0,535,MI,Detroit,800 Woodward Ave,42.3314239,-83.0468584
+rMDncCUM1-1cuqA5gv1puw,PizzaPapalis of Greektown,"['Pizza', 'Italian']",$$,4.5,4.0,493,MI,Detroit,553 Monroe St,42.3353866848686,-83.0416461032287
+ADi8SOow2XPid6NfR98lGQ,Pegasus Taverna,"['Greek', 'Mediterranean', 'Vegetarian']",$$,4.0,3.5,509,MI,Detroit,558 Monroe St,42.3351118673246,-83.0418013896711
+O90Q7WzpAhfuC-QYkCU0Fg,Seva Detroit,"['Vegetarian', 'Vegan', 'Bars']",$$,4.5,3.5,459,MI,Detroit,66 E Forest Ave,42.354852189417,-83.0613682392521
+2-Skd1157bodoslgf-61Vw,Rattlesnake Club,"['Venues & Event Spaces', 'Seafood', 'Steakhouses']",$$$,4.0,3.5,183,MI,Detroit,300 River Pl Dr,42.3359388113022,-83.0168983340263
+BVtQKhG-A5spAPkveNeKqA,The Sugar House,['Cocktail Bars'],$$,4.5,4.0,530,MI,Detroit,2130 Michigan Ave,42.33165,-83.07578
+NJsDmNXS5c_V5_0pxW0UPg,Fishbone's,"['Seafood', 'Sushi Bars', 'Steakhouses']",$$,4.0,3.0,532,MI,Detroit,400 Monroe St,42.3344776267154,-83.0433510479505
+JbeFCVw4IkXK6pV6HA8O4Q,American Coney Island,"['Diners', 'Hot Dogs']",$,4.0,3.5,412,MI,Detroit,114 W Lafayette Blvd,42.3315134330861,-83.0486658781063
+yg-IIDki1ZixqdSoyJ85jQ,Motor City Brewing Works,"['Breweries', 'Pizza']",$$,4.0,4.0,496,MI,Detroit,470 W Canfield St,42.3518690018433,-83.0660513028781
+uoH12KP7sLtTSJf13cyUxg,Detroit Vegan Soul,"['Vegan', 'Vegetarian', 'Soul Food']",$$,4.5,4.0,382,MI,Detroit,8029 Agnes St,42.3551699,-82.9969066
+n_QyiAUeW8cVNfVvA3GpdQ,Vertical Detroit,"['Wine Bars', 'American (New)', 'Steakhouses']",$$$,4.5,4.0,357,MI,Detroit,1538 Centre St,42.3364006,-83.0474363
+dwoSwJ1MkLjCgoy2adC1UQ,Downtown Louie's,"['American (Traditional)', 'Lounges', 'Cocktail Bars']",$$,4.5,4.0,256,MI,Detroit,30 Clifford St,42.334879348718,-83.0501442892863
+2vPro9dmObwcWcs4gdU_3w,El Barzon,"['Italian', 'Mexican']",$$,4.0,4.0,428,MI,Detroit,3710 Junction St,42.330924,-83.1110703
+70zEOA3dsFEwHs5IIFWiaQ,La Dolce Vita,"['Italian', 'Breakfast & Brunch']",$$,4.5,3.5,354,MI,Detroit,17546 Woodward Ave,42.420273,-83.106426
+XNU8Im9LGzs7RT6gKdL_kw,Hygrade Deli,['Delis'],$,4.5,4.0,123,MI,Detroit,3640 Michigan Ave,42.33164,-83.09401
+3Nbs9f7DxP3siSu1pjLj1w,Takoi,"['Thai', 'Pan Asian', 'Cocktail Bars']",$$,4.5,4.0,532,MI,Detroit,2520 Michigan Ave,42.3316432369511,-83.0808343566223
+ngur8BN72eO8vh17hW80dg,Sweetwater Tavern,"['Bars', 'American (Traditional)', 'Chicken Wings']",$$,4.0,3.5,554,MI,Detroit,400 E Congress St,42.3316688537598,-83.041633605957
+jUUJPLDNzBmuT4DFX1taaQ,Scotty Simpson's Fish & Chips,['Fish & Chips'],$$,4.5,4.5,201,MI,Detroit,22200 Fenkell St,42.400311,-83.259355
+Wp_EGDpkEzNgrnJkgWTBzQ,Mabel Gray,['American (New)'],$$$,4.5,4.5,444,MI,Hazel Park,23825 John R Rd,42.46765,-83.10456
+gpOKnMXXiRemJf8x0-oHqg,Townhouse,"['American (New)', 'Bars']",$$,4.0,3.0,874,MI,Detroit,500 Woodward Ave,42.3302362802755,-83.0453289313522
+YtWT6_MKURJKEpNKbO-nzg,ima,"['Noodles', 'Soup']",$$,4.5,4.5,459,MI,Detroit,2015 Michigan Ave,42.3311424255371,-83.0737609863281
+iK0FUjpzLMm0mVVRk0RjZg,El Asador,"['Mexican', 'Seafood', 'Steakhouses']",$$,4.5,4.0,323,MI,Detroit,1312 Springwells St,42.304759,-83.121934
+15OGyKpAqgAJjlXIQUdpqQ,Firebird Tavern,"['American (New)', 'Sports Bars', 'Venues & Event Spaces']",$$,4.5,4.0,188,MI,Detroit,419 Monroe St,42.3347082245001,-83.0432849552254
+2MxbCp72uNi_ImMErb7uMg,Brooklyn Street Local,"['Diners', 'Vegetarian', 'Vegan']",$$,4.5,4.0,287,MI,Detroit,1266 Michigan Ave,42.3317947387695,-83.0636138916016
+Y-b2ciCZx3B66e3jzwM58w,The Clique Restaurant,['American (New)'],$,4.5,4.5,146,MI,Detroit,1326 E Jefferson Ave,42.3333207,-83.033667
+X9Uep5qXDC_GKuX9XvXEbg,Red Dunn Kitchen,"['American (New)', 'Bars', 'Breakfast & Brunch']",$$,4.5,4.0,178,MI,Detroit,1331 Trumbull Ave,42.3271815,-83.0644422
+DsXh8jluV0BaSkVhxQre8Q,SheWolf Pastificio & Bar,['Italian'],$$$,4.0,4.0,293,MI,Detroit,438 Selden St,42.34825,-83.06308
+CnCpxcw9r6lgKDk4br8TKA,Bakersfield,"['Tacos', 'Bars']",$$,4.5,4.0,512,MI,Detroit,3100 Woodward Ave,42.34518,-83.05572
+KGflsQO1qzh5V5QfwaDekw,Central Kitchen + Bar,"['Gastropubs', 'American (Traditional)', 'Cocktail Bars']",$$,4.0,3.5,343,MI,Detroit,660 Woodward Ave,42.3308955873258,-83.0453690361069
+yYnTE3a0KqE6lvZKFMlWJQ,Kresge Court at Detroit Institute of Arts,['American (New)'],$$,4.5,4.5,49,MI,Detroit,5200 Woodward Ave,42.3590826,-83.0655486
+8x7oLtLhFjDwDVVhr8Zj5w,Los Galanes,['Mexican'],$$,4.0,3.5,248,MI,Detroit,3362 Bagley St,42.3235397,-83.0844574
+VGRn5KgYKMkqdIKtBUzQQA,Wahlburgers,"['Burgers', 'American (Traditional)']",$$,4.0,3.5,294,OH,Cleveland,2105 Ontario St,41.49785,-81.69178
+vwNYA9w988UeqQ7X4m8uLg,Candy Bar,['Cocktail Bars'],$$,4.5,4.0,111,MI,Detroit,1509 Broadway St,42.33571,-83.04854
+UB69uSqkwjTKMuGbWEqs5w,Basement Burger Bar,"['American (Traditional)', 'Burgers', 'Salad']",$$,4.5,4.0,241,MI,Detroit,1326 Brush St,42.335437,-83.0441524
+U3wG7XTb07Rf-7n4zjwtBQ,Mexican Village Restaurant,"['Mexican', 'Venues & Event Spaces', 'Bars']",$$,4.0,3.0,221,MI,Detroit,2600 Bagley St,42.3255042,-83.0782341
+Qn3BDpni0V2vtp9P0-85BQ,Taqueria El Rey,"['Mexican', 'Beer Bar', 'Seafood']",$,4.0,4.5,380,MI,Detroit,4730 W Vernor Hwy,42.3190260345587,-83.0991818010807
+IeYAwACNhY6YbbkfVOuk4g,Empire Kitchen and Cocktails,"['American (New)', 'Cocktail Bars', 'American (Traditional)']",$$,4.5,4.5,278,MI,Detroit,3148 Woodward Ave,42.3456545090945,-83.0564396185185
+_GL1Lqbg15Gb0anjqcMmJg,Woodbridge Pub,"['Pubs', 'Vegan', 'Vegetarian']",$$,4.5,3.5,222,MI,Detroit,5169 Trumbull St,42.3539924621582,-83.0801239013672
+ga6XUaH06FXz3-5kGxRZ4w,Rusted Crow Detroit,"['Cocktail Bars', 'Burgers', 'Sandwiches']",$$,4.0,3.5,364,MI,Detroit,78 W Adams Ave,42.3364903026449,-83.0524054169655
+XNU8Im9LGzs7RT6gKdL_kw,Hygrade Deli,['Delis'],$,4.5,4.0,123,MI,Detroit,3640 Michigan Ave,42.33164,-83.09401
+QUPAXavtWd6LKnvsWV6ywQ,Detroit Shipping Company,"['Beer Gardens', 'Food Court']",$$,4.5,4.0,256,MI,Detroit,474 Peterboro St,42.34422,-83.06156
+gwp2wEKZXfWGxnLJKO5bgQ,Golden Fleece Restaurant,"['Greek', 'Mediterranean']",$$,4.0,3.5,253,MI,Detroit,525 Monroe St,42.3352594,-83.0421371
+H-Ek50bSn5KCBQ1_tVmQAA,Gus' World Famous Fried Chicken,"['Southern', 'Chicken Shop', 'Comfort Food']",$$,4.5,4.0,230,MI,Westland,35505 Ford Rd,42.32409,-83.39072
+3Nbs9f7DxP3siSu1pjLj1w,Takoi,"['Thai', 'Pan Asian', 'Cocktail Bars']",$$,4.5,4.0,532,MI,Detroit,2520 Michigan Ave,42.3316432369511,-83.0808343566223
+9zI10-FuCxKqd0FAHwUFRA,Lumen Detroit,['American (New)'],$$,4.0,4.0,274,MI,Detroit,1903 Grand River Ave,42.3345218,-83.0546893
+Ppu2cGsOvNhAqpM_CLANiA,Assembly Line Buffet,['Buffets'],$$,4.0,3.0,57,MI,Detroit,2901 Grand River Ave,42.3384159599956,-83.067163364418
+tIHUAoxlyX-L3JddTNwKvw,Vivio's Food & Spirits,"['American (Traditional)', 'Sports Bars']",$$,4.0,3.5,191,MI,Detroit,2460 Market St,42.34607,-83.03867
+cVFXGNMHEipnAUCHhR2vVQ,CaféDIA,"['Delis', 'Sandwiches']",$,4.5,4.0,7,MI,Detroit,5200 Woodward Ave,42.3770609932708,-83.0772399902344
+A7qhrIwaUgdwcLD44JY5XA,San Morello,['Italian'],$$$,4.0,4.0,287,MI,Detroit,1400 Woodward Ave,42.33439,-83.04848
+P9v9Lj_wd_JzhyhBAhIluA,Cafe Nini,"['Italian', 'Cafes']",$$$,4.5,4.5,31,MI,Grosse Pointe Farms,98 Kercheval Ave,42.39511,-82.90268
+cVqtIOgBM7NPuK0IQGloaQ,Flowers of Vietnam,['Vietnamese'],$$,4.5,4.0,178,MI,Detroit,4440 W Vernor Hwy,42.32025,-83.096543
+QgIH8x-IwLdANk_n7mcJ8A,Rock City Eatery,"['American (New)', 'Tapas/Small Plates', 'Cocktail Bars']",$$,4.0,4.0,412,MI,Detroit,4216 Woodward Ave,42.35212116711,-83.0607708916068
+Uwo_Nx_2WDvGF9SwVMlEAg,Detroiter Bar,"['Sports Bars', 'American (New)']",$,4.5,4.0,98,MI,Detroit,655 Beaubien St,42.332924183083,-83.04129869515
+bcpTLnLbpf711AuBxO_mLQ,Prime and Proper,['Steakhouses'],$$$$,4.0,4.0,358,MI,Detroit,1145 Griswold St,42.3322879,-83.0493105
+kSkRJxIPDOVmbBnFldGh0Q,Granite City Food & Brewery,"['American (New)', 'Breweries']",$$,4.0,3.0,355,MI,Detroit,100 Renaissance Ctr,42.3293665436664,-83.0411381336311
+vwo792phWL-6KiTEaghO5Q,Pappy's Bar & Grill,"['Sports Bars', 'American (Traditional)']",$,4.0,3.5,81,MI,Detroit,517 Monroe St,42.3351722,-83.0422558
+bj91BZDt44jIE_1DCDrU_Q,Rose's Fine Food,"['American (New)', 'Breakfast & Brunch', 'Barbeque']",$$,4.5,3.5,319,MI,Detroit,10551 E Jefferson Ave,42.3640221114717,-82.9773387588608
+y5f0TpePJ-vOxEjzNvQuwA,The Peterboro,"['Chinese', 'Cocktail Bars']",$$,4.0,4.0,325,MI,Detroit,420 Peterboro St,42.3441819101572,-83.0605640262365
+nVlsHOPxFmFnA9wj_DS_UA,Xochimilco Restaurant,['Mexican'],$,3.5,3.0,433,MI,Detroit,3409 Bagley St,42.3232177644968,-83.0849513411522
+R5OtDkJ4wzkJyPXxrzG7cg,Ham Shop Cafe,"['Diners', 'Mediterranean']",$,4.0,4.0,105,MI,Detroit,330 Monroe St,42.333988,-83.0442667
+RMNdJkdMe7jGMQC0ckBlrg,Prism,"['Seafood', 'Steakhouses']",$$$,4.5,4.0,72,MI,Detroit,555 E Lafayette St,42.33451,-83.04123
+PWkqo_whZ0qhLTpLsi5xjw,Mootz Pizzeria + Bar,"['Pizza', 'Bars']",$$,4.5,4.0,163,MI,Detroit,1230 Library St,42.3342397,-83.0463982
+rcBtRcIk35yZumAOymqcFg,Gather,"['American (New)', 'Cocktail Bars']",$$,4.5,4.5,121,MI,Detroit,1454 Gratiot Ave,42.3441750749333,-83.0378677140105
+oiAg2xABaFCKiZTyBMKIvg,Z's Villa,"['Bars', 'American (Traditional)']",$$,4.5,4.0,104,MI,Detroit,42 Piquette St,42.3665009,-83.0696411
+erh3vY9R44hX7NrUzNTjbQ,Wolfgang Puck Steak - Temporarily Closed,['Steakhouses'],$$$,4.0,3.5,135,MI,Detroit,1777 3rd St,42.3328327434605,-83.0595397190491
+y6fqk-OHUuPw4QjHu-bDow,Traffic Jam & Snug,"['American (Traditional)', 'Beer Bar']",$$,3.5,3.0,489,MI,Detroit,511 W Canfield St,42.350958,-83.066086
+AejD88NtGNyy4C1cS_vg2A,Andrews On the Corner,"['American (New)', 'Salad', 'Soup']",$$,4.0,4.0,79,MI,Detroit,201 Joseph Campau St,42.3366854,-83.0181027
+Qn3BDpni0V2vtp9P0-85BQ,Taqueria El Rey,"['Mexican', 'Beer Bar', 'Seafood']",$,4.5,4.5,380,MI,Detroit,4730 W Vernor Hwy,42.3190260345587,-83.0991818010807
+0BcmouUOqQrQn_frFtjLcg,Evie's Tamales,['Mexican'],$,4.5,4.0,131,MI,Detroit,3454 Bagley St,42.3231692,-83.08574
+LipkbMbvM2znf3wYNcEjDA,Bates Hamburgers,['Burgers'],$,4.0,4.5,262,MI,Livonia,33406 5 Mile Rd,42.39745,-83.37393
+28C2ONtU_VpmMA-uQUHhkw,Grille 39,['American (Traditional)'],$$,4.5,3.0,18,MI,Detroit,5801 Southfield Expy,42.3312391329595,-83.2179588894213
+fJ-g62WpfeNbR4qv7qAawA,Niki's Pizza,"['Pizza', 'Greek']",$$,4.0,3.5,228,MI,Detroit,735 Beaubien St,42.3337210606674,-83.04200186272
+1ie3hpOjfyw3M0hANBR5bA,24grille,"['Bars', 'American (Traditional)']",$$$,4.0,3.0,279,MI,Detroit,204 Michigan Ave,42.331942,-83.050032
+CczeReC8hCs-0l1_8sIVgw,Cadillac Square Diner,"['Diners', 'Breakfast & Brunch']",$,4.5,4.0,61,MI,Detroit,111 Cadillac Sq,42.33196,-83.04416
+rjLf7nlwmw10w3--wxR2tw,Caucus Club,"['Steakhouses', 'Salad', 'Cocktail Bars']",$$$,4.0,4.0,114,MI,Detroit,150 W Congress St,42.3295624555684,-83.0475959237613
+pf325w600O3YXpcgznnmRQ,Sindbad's Restaurant & Marina,"['Seafood', 'American (Traditional)', 'Steakhouses']",$$,4.0,3.0,158,MI,Detroit,100 Saint Clair St,42.3581009,-82.973938
