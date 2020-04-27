@@ -71,7 +71,7 @@ There will be three tables stored in the database:
 ## Instructions
 The project is a bit completed. Here's **how to run the code**!
 #### Step 1: Get an API key from Yelp API!
- [1] Go to Yelp API and apply an API key using the link below: "https://www.yelp.com/developers/v3/manage_app".
+ [1] Go to Yelp API and apply an API key using the link below: "https://www.yelp.com/developers/v3/manage_app".<br/>
  [2] Create a "secrets.py" file and put your API key into it. The content format is like this: api_key =""<br/>
 
 #### Step 2: pip3 install the required package for the project!
@@ -83,14 +83,14 @@ The project is a bit completed. Here's **how to run the code**!
  [1] using Python3 to run apps.py 
 
 ## Interactions
-[0] Homepage: There are 6 options for the user. The detail information of each link is shown below.
-[1] Link “Detroit Top50 Restaurants” is presenting the Top50 restaurants ranked by the ratings from the TripAdvisor using HTML Tables. The restaurant name, price_level, ratings from different apps, category, reviews_count are list inside. 
+[0] Homepage: There are 6 options for the user. The detail information of each link is shown below.<br/>
+[1] Link “Detroit Top50 Restaurants” is presenting the Top50 restaurants ranked by the ratings from the TripAdvisor using HTML Tables. The restaurant name, price_level, ratings from different apps, category, reviews_count are list inside. <br/>
 And user can sort the data by selecting different items and the sequence of it using Flask Forms (TOP or DESC). There are 3 kinds of items: ratings from TripAdvisor (default).
 [2] Link “Map of the Detroit restaurants” can show the location of the restaurants. I will use Tableau to generate the map, and it can be displayed on the web. I will use the longitude and latitude to locate the place. When user click on the restaurant point on the map, user can see the detail information of the restaurant (include ratings and the number of reviews)
-The detail can be seen from restaurants_map.twb.
-[3] Link “Reviews of the top restaurants” will show 3 reviews for each restaurant using HTML tables.
-[4] Link “Ratings Distribution Comparison” provides the comparison of ratings between TripAdvisor and Yelp for ratings using Line Chart from Plotly.
-[5] Link “Price level Status” gives the view for the price level of the restaurants using Bar Chart or Pie Chart from Plotly (show the distribution of the price level).
+The detail can be seen from restaurants_map.twb.<br/>
+[3] Link “Reviews of the top restaurants” will show 3 reviews for each restaurant using HTML tables.<br/>
+[4] Link “Ratings Distribution Comparison” provides the comparison of ratings between TripAdvisor and Yelp for ratings using Line Chart from Plotly.<br/>
+[5] Link “Price level Status” gives the view for the price level of the restaurants using Bar Chart or Pie Chart from Plotly (show the distribution of the price level).<br/>
 [6] Link “Detroit Top50 Restaurants Table” is a table view to check the information of the TOP50 restaurant in Detroit (convenient to use).
 
 
