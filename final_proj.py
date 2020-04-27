@@ -7,13 +7,14 @@ import csv
 from urllib.error import HTTPError
 from urllib.parse import quote
 from urllib.parse import urlencode
-import secrets # Go to secrets.py and follow the instructions!
+import secrets 
 import sqlite3
 from bs4 import BeautifulSoup
+import plotly.graph_objs as go
+from plotly.offline import plot
 
 
-CLIENT_ID = secrets.Client_ID
-#SEARCH_LIMIT = 41
+
 api_key= secrets.api_key
 
 
@@ -273,8 +274,7 @@ def make_request_using_cache_crawl_rating(url,dictaionary,cache):
         fw.close() 
         return dictaionary[unique_ident]
 
-#details_page_soup = BeautifulSoup(details_page_text, "html.parser")
-                #rating = details_page_soup.find('span',class_="restaurants-detail-overview-cards-RatingsOverviewCard__overallRating--nohTl").next_element
+
   
 
 
@@ -293,10 +293,8 @@ def get_info_tripa(page=""):
                 p = i.find('a',class_ = "_15_ydu6b").next_element.next_element.next_element.next_element.next_element
                 s = i.find('a',class_ = "_15_ydu6b").next_element
                 detail_url = 'https://www.tripadvisor.com' + i.find('a',class_ = "_15_ydu6b")["href"]
-                details_page_text = make_request_using_cache_crawl_rating(detail_url,TRIPA_DETAIL,CACHE_DETAIL)
-                #details_page_soup = BeautifulSoup(details_page_text, "html.parser")
-                #rating = details_page_soup.find('span',class_="restaurants-detail-overview-cards-RatingsOverviewCard__overallRating--nohTl").next_element
-                rating_dic[p] = details_page_text
+                details_page_rating = make_request_using_cache_crawl_rating(detail_url,TRIPA_DETAIL,CACHE_DETAIL)
+                rating_dic[p] = details_page_rating
         except:
             continue
     return rating_dic
@@ -307,9 +305,9 @@ z = get_info_tripa("oa60")
 h = get_info_tripa("oa90")
 top_restaurants = list(x.keys()) + list(y.keys()) + list(z.keys()) + list(h.keys())
 top_restaurants_dic = {**x, **y, **z, **h} 
-#top_restaurants = list(get_info_tripa().keys())+list(get_info_tripa("oa30").keys())+list(get_info_tripa("oa60").keys())
+
 print(top_restaurants)
-#print(len(top100))
+
 
 
 
@@ -350,6 +348,36 @@ def write_restaurants_file(restaurants_list, filename):
             restaurant.street_address, restaurant.latitude, restaurant.longitude])
             
     print ("Writing restaurants'information on {}...".format(filename))
+
+
+def write_restaurants_file_30(restaurants_list, filename):
+    """Write the restaurants' informatino on csv file #30
+
+        Args:
+            restaurants_list: a list of restaurants, with each item represented by Restaurant object
+            filename: the file to be writte on
+            
+        Returns:
+            None
+       
+        Modifies:
+            the file with filename
+    """
+    with open(filename,"w") as csvfile:
+        csv_writer = csv.writer(csvfile)
+        csv_writer.writerow(["restaurant_id", "restaurant_name", "categories", "price_level","trip_ratings","ratings", "review_counts", "state", "city", "street_address", "latitude", "longitude"])
+        count = 0
+        for restaurant in restaurants_list:
+            if count == 50:
+                break
+            csv_writer.writerow([restaurant.id, restaurant.name, restaurant.categories, restaurant.price, restaurant.trip_ratings,restaurant.ratings, restaurant.review_counts, restaurant.state, restaurant.city, 
+            restaurant.street_address, restaurant.latitude, restaurant.longitude])
+            count += 1
+            
+    print ("Writing restaurants'information on {}...".format(filename))
+
+
+
 
 
 def write_reviews_file(reviews_dict, filename):
@@ -432,7 +460,7 @@ REVIEWS_DICTION = get_data(REVIEWS_FNAME, identifier = "reviews", cache = CACHE_
 detroit_restaurants = []
 businesses = []
 for c in CACHE_DICTION:
-    print(c)
+    
     businesses.append(c["businesses"])
 
 for business in businesses:
@@ -444,7 +472,7 @@ for business in businesses:
 # Write each restaurant's information on restaurants.csv file
 REST_CSV_FNAME = "restaurants.csv"
 write_restaurants_file(restaurants_list = detroit_restaurants, filename = REST_CSV_FNAME)
-
+write_restaurants_file_30(restaurants_list = detroit_restaurants, filename = 'restaurant_30.csv')
 # Write each restaurant's reviews on reviews.csv file
 REV_CSV_FNAME = "reviews.csv"
 write_reviews_file(reviews_dict = REVIEWS_DICTION, filename = REV_CSV_FNAME)
@@ -484,7 +512,6 @@ def get_reviews_dict(review_list):
         review_dict["review_1"] = review_list[0]
         review_dict["review_2"] = review_list[1]
         review_dict["review_3"] = review_list[2]
-        print(review_list[2])
         return review_dict
 
 # ---------------------------------------------------------------------
@@ -606,7 +633,7 @@ for restaurant in detroit_restaurants:
         cur = conn.cursor()
     except:
         print("Fail to connect to the initial database.")
-    print(len(list(review_dict.keys())))
+    #print(len(list(review_dict.keys())))
     insertion = (None,review_dict["review_1"],review_dict["review_2"],review_dict["review_3"])
     statement = '''
     INSERT INTO Reviews
@@ -643,13 +670,309 @@ for restaurant in detroit_restaurants:
     cur.execute(statement,insertion)
     conn.commit()
 
+
+
+
+
+def get_top50_form():
+    # global res_list
+    try:
+        conn = sqlite3.connect(DBNAME)
+        cur = conn.cursor()
+    except:
+        print("Fail to connect to the initial database.")
+
+
+
+    statement = '''
+            SELECT r.restaurant_name, r.categories, p.price_level, r.trip_ratings, r.ratings, r.review_count FROM Restaurants r
+            JOIN PriceLevel p ON p.Id = r.price_level_id
+            ORDER BY r.trip_ratings DESC LIMIT 50
+            );
+        '''
+
+
+    cur.execute(statement)
+    results = cur.fetchall()
+    res_list = []
+    for i in results:
+        res_list.append([i[0],i[1],'{}, {}, {}{}'.format(i[2],i[3],i[4],i[5]),i[6],i[7],int(i[8]),int(i[9])])
+
 print('----------------')
 print('Process Completed!')
+
+
+
+def get_top50_list():
+    try:
+        conn = sqlite3.connect(DBNAME)
+        cur = conn.cursor()
+    except:
+        print("Fail to connect to the initial database.")
+
+
+
+    statement = '''
+            SELECT r.restaurant_name, r.categories, p.price_level, r.trip_ratings, r.ratings, r.review_count FROM Restaurants r
+            JOIN PriceLevel p ON p.Id = r.price_level_id
+            ORDER BY r.trip_ratings DESC LIMIT 50 
+        '''
+    cur.execute(statement)
+    results = cur.fetchall()
+    #print(results)
+    name_lt = []
+    categories_lt = []
+    price_level_lt = []
+    ratings_lt = []
+    review_count_lt = []
+    number_list = list(range(1,51))
+    for i in results:
+        name_lt.append(i[0])
+        categories_lt.append(i[1])
+        price_level_lt.append(i[2])
+        ratings_lt.append('{},{}'.format(i[3],i[4]))
+        review_count_lt.append(i[5])
+
+    trace = go.Table(
+        header = dict(values=['#','Restaurant Name','Categories','Price','Ratings from 2 website','Review Count']),
+        cells = dict(values=[number_list,name_lt,categories_lt,price_level_lt,ratings_lt,review_count_lt]))
+    data = [trace] 
+    div = plot(data,filename = 'basic_table',output_type = 'div')
+    conn.commit()
+    conn.close()
+    return div
+
+
+def price_bar_plot():
+    try:
+        conn = sqlite3.connect(DBNAME)
+        cur = conn.cursor()
+    except:
+        print("Fail to connect to the initial database.")
+
+    statement = '''
+            SELECT DISTINCT r.restaurant_name, p.price_level FROM Restaurants r
+            JOIN PriceLevel p ON p.Id = r.price_level_id
+            ORDER BY r.trip_ratings DESC LIMIT 50 
+        '''
+    cur.execute(statement)
+    results = cur.fetchall()
+    x = []
+    y = []
+     
+    for i in results:
+        x.append(i[0])
+        y.append(i[1])
+
+    conn.commit()
+    conn.close()
     
+    z = []
+    for i in y:
+        if i == '$':
+            z.append(1)
+        elif i == '$$':
+            z.append(2)
+        elif i == '$$$':
+            z.append(3)
+        else:
+            z.append(4)
+        
+   
+    bar_data = [go.Bar( name='SF Zoo',x=x, y=z,text=z,
+            textposition='auto')]
+   
+    div = plot(bar_data, filename='price_bar_chart', output_type='div')
+    return div
     
 
-        
+def price_pie_plot():
+    try:
+        conn = sqlite3.connect(DBNAME)
+        cur = conn.cursor()
+    except:
+        print("Fail to connect to the initial database.")
+    statement = '''
+            SELECT p.price_level, COUNT(*)  FROM PriceLevel p 
+            JOIN Restaurants r ON p.Id = r.price_level_id
+			GROUP BY p.price_level
+            ORDER BY COUNT(*) DESC LIMIT 50 
+        '''
+    cur.execute(statement)
     
+    
+    result = cur.fetchall()
+    labels = []
+    values = []
+    for i in result:
+        labels.append(i[0])
+        values.append(i[1])
+
+    conn.commit()
+    conn.close()
+
+    trace = go.Pie(labels=labels, values=values)
+
+    div = plot([trace], filename='price_pie_chart', output_type='div')
+    return div
+
+def get_top50_form():
+    # global res_list
+    try:
+        conn = sqlite3.connect(DBNAME)
+        cur = conn.cursor()
+    except:
+        print("Fail to connect to the initial database.")
+
+    
+
+    statement = '''
+            SELECT r.restaurant_name, r.categories, p.price_level, r.trip_ratings, r.ratings, r.review_count FROM Restaurants r
+            JOIN PriceLevel p ON p.Id = r.price_level_id
+            ORDER BY  r.trip_ratings LIMIT 50 
+        '''
+    
+
+    cur.execute(statement)
+    results = cur.fetchall()
+    
+    res_list = []
+    for i in results:
+        res_list.append([i[0],i[1],i[2],int(i[3]),int(i[4]),int(i[5])])
+    conn.commit()
+    conn.close()
+
+    return res_list
+
+
+
+def get_restaurants_sorted(sortby='ratings', sortorder='desc'):
+    if sortby == 'yelp_ratings':
+        sortcol = 4
+    elif sortby == 'reviews':
+        sortcol = 5
+    elif sortby == 'trip_ratings':
+        sortcol = 3
+    
+    else:
+        sortcol = 3
+    rev = (sortorder == 'desc')
+    results = get_top50_form()
+    sorted_list = sorted(results, key=lambda row: row[sortcol], reverse=rev)
+    return sorted_list
+
+
+def get_review_list():
+    try:
+        conn = sqlite3.connect(DBNAME)
+        cur = conn.cursor()
+    except:
+        print("Fail to connect to the initial database.")
+
+
+    statement = '''
+            SELECT r.restaurant_name,r.trip_ratings,e.review_1,e.review_2,e.review_3
+            FROM Reviews e 
+            JOIN Restaurants r ON e.Id = r.review_id
+            ORDER BY  r.trip_ratings LIMIT 50 
+        '''
+    cur.execute(statement)
+    results = cur.fetchall()
+    name_lt = []
+    r1 = []
+    r2 = []
+    r3 = []
+    number_list = list(range(1,51))
+    for i in results:
+        name_lt.append(i[0])
+        r1.append(i[2])
+        r2.append(i[3])
+        r3.append(i[4])
+    
+    trace = go.Table(
+        header = dict(values=['#','Restaurant Name','Review_1','Review_2','Review_3']),
+        cells = dict(values=[number_list,name_lt,r1,r2,r3]))
+
+
+    data = [trace] 
+    div = plot(data,filename = 'basic_table',output_type = 'div')
+    conn.commit()
+    conn.close()
+    return div
+
+
+
+def plot_rating_line():
+    try:
+        conn = sqlite3.connect(DBNAME)
+        cur = conn.cursor()
+    except:
+        print("Fail to connect to the initial database.")
+
+    statement = '''
+            SELECT  r.trip_ratings, COUNT(*) FROM Restaurants r
+            GROUP BY r.trip_ratings
+            ORDER BY trip_ratings DESC 
+    '''
+
+
+   
+    cur.execute(statement)
+    resultT = cur.fetchall()
+    #tname = []
+    trating = []
+    trating_count = []
+    for i in resultT:
+        trating.append(i[0])
+        trating_count.append(i[1])
+
+    statement = '''
+            SELECT  r.ratings, COUNT(*) FROM Restaurants r
+            GROUP BY r.ratings
+            ORDER BY ratings DESC 
+    '''
+    cur.execute(statement)
+    resulty = cur.fetchall()
+    
+    yrating = []
+    yrating_count = []
+    for i in resulty:
+        yrating.append(i[0])
+        yrating_count.append(i[1])
+
+    conn.commit()
+    conn.close()    
+
+    trace0 = go.Scatter(
+        x = trating,
+        y = trating_count,
+        mode = 'lines+markers',
+        name = 'TripAdvisor Ratings Distribution'
+        )
+
+    trace1 = go.Scatter(
+        x = yrating,
+        y = yrating_count,
+        mode = 'lines+markers',
+        name = 'Yelp Ratings Distribution'
+        )
+    data = [trace0,trace1]
+    div = plot(data, filename='rating line chart', output_type='div')
+    return div
+
+
+
+
+
+
+
+
+
+
+
+    
+
+   
         
 
    

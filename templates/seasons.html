@@ -1,0 +1,43 @@
+
+<link rel="stylesheet" href="/static/f1.css">
+
+<h1 align='center'> Detroit's Top Restaurants </h1>
+
+<form align='center' action="/form" method="POST">
+    Sort By:<br/>
+    <input type="radio" name="sortby" value="trip_ratings"/> Rankings by TripAdvisor<br/>
+    <input type="radio" name="sortby" value="yelp_ratings"/> Ratings by Yelp <br/>
+    <input type="radio" name="sortby" value="reviews"/> Reviews by Yelp <br/>
+    <br/>
+    Sort Order:<br/>
+    <input type="radio" name="sortorder" value="asc"/> Ascending <br/>
+    <input type="radio" name="sortorder" value="desc"/> Descending <br/>
+    <br/>
+    <input type="submit" name="update" value="Update"/>
+    <br/>
+    <br/>
+</form>
+
+<table align='center' border=1>
+    <tr>
+        
+        <th>Name</th>
+        <th>Categories</th>
+        <th>Price</th>
+        <th>TripAdvisor Ratings</th>
+        <th>Yelp Ratings</th>
+        <th>Yelp Reviews</th>
+    </tr>
+
+{% for s in seasons %}
+    <tr>
+        <td>{{s[0]}}</td>
+        <td>{{s[1]}}</td>
+        <td>{{s[2]}}</td>
+        <td>{{s[3]}}</td>
+        <td>{{s[4]}}</td>
+        <td>{{s[5]}}</td>
+        
+    </tr>
+{% endfor %}
+</table>
