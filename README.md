@@ -85,7 +85,7 @@ The project is a bit completed. Here's **how to run the code**!
 ## Interactions
 [0] Homepage: There are 6 options for the user. The detail information of each link is shown below.<br/>
 [1] Link “Detroit Top50 Restaurants” is presenting the Top50 restaurants ranked by the ratings from the TripAdvisor using HTML Tables. The restaurant name, price_level, ratings from different apps, category, reviews_count are list inside. <br/>
-And user can sort the data by selecting different items and the sequence of it using Flask Forms (TOP or DESC). There are 3 kinds of items: ratings from TripAdvisor (default).
+And user can sort the data by selecting different items and the sequence of it using Flask Forms (TOP or DESC). There are 3 kinds of items: ratings from TripAdvisor (default).<br/>
 [2] Link “Map of the Detroit restaurants” can show the location of the restaurants. I will use Tableau to generate the map, and it can be displayed on the web. I will use the longitude and latitude to locate the place. When user click on the restaurant point on the map, user can see the detail information of the restaurant (include ratings and the number of reviews)
 The detail can be seen from restaurants_map.twb.<br/>
 [3] Link “Reviews of the top restaurants” will show 3 reviews for each restaurant using HTML tables.<br/>
